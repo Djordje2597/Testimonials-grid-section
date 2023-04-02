@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: hsl(210, 46%, 95%);
+}
+.first-card h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+.first-client-paragraph {
+  color: hsl(0, 0%, 70%);
+  padding-bottom: 2rem;
+  margin-right: 1.3rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.client-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid hsl(0, 0%, 50%);
+}
+.client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.client-info {
+  display: flex;
+  place-items: center;
+}
+.client-info p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+.client-info span {
+  color: hsl(0, 0%, 100%);
+  opacity: 0.5;
+}
+.client-name {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 1rem;
+}
+
+.first-card {
+  width: 400px;
+  margin: 2rem auto;
+  background: hsl(263, 55%, 52%);
+  padding: 0 2rem;
+  border-radius: 2%;
+}
+
+/* SECOND CARD */
+
+.second-card {
+  margin: 2rem auto;
+  width: 400px;
+  background: hsl(217, 19%, 35%);
+  padding: 1.75rem 2rem;
+  border-radius: 2%;
+}
+.second-client-paragraph {
+  color: hsl(0, 0%, 70%);
+  padding-bottom: 1.25rem;
+  margin-right: 1.3rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+.second-card h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+}
+
+/* THIRD CARD */
+
+.third-card {
+  width: 400px;
+  margin: 2rem auto;
+  background: hsl(0, 0%, 100%);
+  padding: 1.75rem 2rem;
+  border-radius: 2%;
+}
+.third-card img {
+  border: 3px solid hsl(0, 0%, 81%);
+}
+.third-client-paragraph {
+  color: hsl(0, 0%, 50%);
+  padding-bottom: 1.25rem;
+  margin-right: 1.3rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+.third-card h2 {
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.third-info p {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+.third-info span {
+  color: hsl(0, 0%, 50%);
+}
+
+/*  FOURTH CARD */
+
+.fourth-card {
+  margin: 2rem auto;
+  width: 400px;
+  background: hsl(219, 29%, 14%);
+  padding: 1.75rem 2rem;
+  border-radius: 2%;
+}
+.fourth-card img {
+  border: 3px solid hsl(263, 55%, 52%);
+}
+.fourth-card h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+}
+
+.fourth-client-paragraph {
+  color: hsl(0, 0%, 70%);
+  padding-bottom: 1.25rem;
+  margin-right: 1.3rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+/* FIFTH CARD */
+
+.fifth-card {
+  width: 400px;
+  margin: 2rem auto;
+  background: hsl(0, 0%, 100%);
+  padding: 1.75rem 2rem;
+  border-radius: 2%;
+}
+.fifth-card img {
+  border: 3px solid hsl(0, 0%, 81%);
+}
+.fifth-client-paragraph {
+  color: hsl(0, 0%, 50%);
+  padding-bottom: 1.25rem;
+  margin-right: 1.3rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+.fifth-card h2 {
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.fifth-info p {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+.fifth-info span {
+  color: hsl(0, 0%, 50%);
+}
+
+@media screen and (min-width: 1255px) {
+  .main {
+    margin: 1rem 3.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 350px 350px;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+  }
+  .first-card {
+    width: 615px;
+    margin: 0;
+    grid-area: a;
+  }
+
+  .second-card {
+    width: 300px;
+    margin: 0;
+    grid-area: b;
+  }
+  .third-card {
+    grid-area: c;
+    margin: 0;
+    width: 300px;
+  }
+  .fourth-card {
+    grid-area: d;
+    width: 615px;
+    margin: 0;
+  }
+  .fifth-card {
+    width: 300px;
+    margin: 0;
+    grid-area: e;
+  }
+  .fifth-card h2 {
+    margin-bottom: 1.5rem;
+  }
+}
